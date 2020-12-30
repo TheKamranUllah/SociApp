@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/mainBackground"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/delete_status_page_toolbar"
+        layout="@layout/app_bar_layout">
+
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/statuslayout"
+        android:background="@drawable/post_border"
+        android:layout_below="@+id/delete_status_page_toolbar"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/delete_status_profile_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/profile"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/delete_status_user_name"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:text="User Name"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:id="@+id/delete_status_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status updated on"
+                        android:textColor="@android:color/darker_gray"
+                        android:textStyle="bold"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/delete_status_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="Date"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=","
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:id="@+id/delete_status_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="Time"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/delete_all_user_status"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:hint="Your status goes here."
+            android:layout_below="@+id/update_post_status_page_toolbar"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:longClickable="false"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:textSize="18sp"
+            android:padding="50dp"
+            />
+
+
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/delete_status_like_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/dislike" />
+
+            <TextView
+                android:id="@+id/status_display_no_of_likes"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:padding="15dp"
+                android:text="0 Likes"
+                android:layout_marginRight="2dp"
+                android:textColor="@android:color/black"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/status_comment_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:baselineAlignBottom="false"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/comment" />
+
+            <TextView
+                android:id="@+id/status_display_no_of_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:text="0 Comments"
+                android:layout_marginRight="2dp"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/status_share_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:baselineAlignBottom="false"
+                android:src="@drawable/shares" />
+
+            <TextView
+                android:id="@+id/status_display_no_of_share"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="15dp"
+                android:text="0 Share"
+                android:textColor="@android:color/black"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>-->
+
+    </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/statuslayout"
+              android:orientation="vertical">
+
+              <Button
+                  android:id="@+id/status_update_button"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/button"
+                  android:text="Update"
+                  android:textSize="22sp"
+                  android:textColor="@android:color/white"
+                  android:padding="10dp"
+                  android:textAllCaps="false"
+                  android:layout_marginTop="25dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"/>
+
+              <Button
+
+                  android:id="@+id/status_delete_button"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/button"
+                  android:text="Delete"
+                  android:textSize="22sp"
+                  android:textColor="@android:color/white"
+                  android:padding="10dp"
+                  android:textAllCaps="false"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"/>
+
+          </LinearLayout>
+
+
+
+</RelativeLayout>

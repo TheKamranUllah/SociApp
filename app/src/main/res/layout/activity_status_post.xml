@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".StatusPostActivity">
+
+
+    <include
+        android:id="@+id/update_post_status_page_toolbar"
+        layout="@layout/app_bar_layout"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/update_post_status_page_toolbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+   <TextView
+       android:id="@+id/my_message_to_user"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="5dp"
+       android:layout_below="@+id/update_post_status_page_toolbar"
+       android:text="Please write your status within frame!"
+       android:textColor="@android:color/white"
+       android:textAlignment="center"
+       android:textSize ="15sp"/>
+
+   <LinearLayout
+       android:id="@+id/Formate_layout"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:layout_below="@+id/my_message_to_user"
+       android:gravity="center"
+       android:orientation="horizontal"
+       >
+
+
+       <ToggleButton
+           android:id="@+id/show_off_button"
+           android:layout_width="80dp"
+           android:layout_height="50dp"
+           android:textColor="@android:color/white"
+           android:background="@drawable/button"
+           android:textAllCaps="false"
+           android:textOn="Formats Hide"
+           android:textOff="Formats Show"/>
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/spinner_layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/Formate_layout"
+       android:layout_marginBottom="10dp"
+       android:layout_marginTop="10dp"
+       android:orientation="horizontal">
+
+
+       <TextView
+           android:id="@+id/size_text"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@android:color/white"
+           android:textSize="14sp"
+           android:text="Size"
+           android:layout_marginLeft="5dp"/>
+
+    <Spinner
+        android:id="@+id/text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginLeft="5dp"/>
+
+       <TextView
+           android:id="@+id/color_text"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@android:color/white"
+           android:text="Color"
+           android:textSize="14sp"
+           android:layout_marginLeft="5dp"/>
+
+       <Spinner
+           android:id="@+id/text_color"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/button"
+           android:layout_marginLeft="5dp"/>
+
+       <TextView
+           android:id="@+id/background_text"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@android:color/white"
+           android:text="Background"
+           android:textSize="14sp"
+           android:layout_marginLeft="5dp"/>
+
+       <Spinner
+           android:id="@+id/text_background"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/button"
+           android:layout_marginLeft="5dp"
+           />
+
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textandbuttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_layout"
+        android:orientation="vertical">
+
+
+
+    <EditText
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:hint="Your status goes here."
+        android:layout_below="@+id/update_post_status_page_toolbar"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:background="@drawable/backgone"
+        android:textSize="14sp"
+        android:padding="5dp"
+        />
+
+        <Button
+            android:id="@+id/update_status_post_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/status_text"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:padding="10dp"
+            android:text="Add Post"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+
+    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

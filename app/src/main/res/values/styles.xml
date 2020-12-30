@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#67c415</item>
+        <item name="colorPrimaryDark">#67c415</item>
+        <item name="colorAccent">#E9EBEE</item>
+    </style>
+
+    <style name="mydialog" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+    </style>
+
+    <style name="message_image_view" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#13692a</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#3B4041</item>
+    </style>
+
+
+</resources>

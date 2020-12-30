@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorProfile"
+    tools:context=".NotificationsActivity">
+
+    <include
+        android:id="@+id/notification_toolbar_layout"
+        layout="@layout/app_bar_layout"
+        />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/notification_toolbar_layout"
+    android:layout_marginTop="2dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notification_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/notification_toolbar_layout"
+        android:layout_margin="15dp" />
+</ScrollView>
+
+    <Button
+        android:id="@+id/clear_all_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Clear All"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button"/>
+
+</RelativeLayout>

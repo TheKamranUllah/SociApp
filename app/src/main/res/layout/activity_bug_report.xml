@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BugReportActivity">
+
+    <include
+        android:id="@+id/bug_report_bar_layout"
+        layout="@layout/app_bar_layout"/>
+
+    <TextView
+        android:id="@+id/titl_text_of_bug_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/bug_report_bar_layout"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Help us to improve the app and give you the best experience"/>
+
+    <TextView
+        android:id="@+id/hint_of_bug_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Below are the important points before reporting a problem."
+        android:layout_below="@+id/titl_text_of_bug_report"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        android:id="@+id/line_to_sperate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@color/chattexthint"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/hint_of_bug_report"
+        />
+    <TextView
+        android:id="@+id/first_number_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1)"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/line_to_sperate"/>
+
+    <TextView
+        android:id="@+id/first_number_point_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please provide your full name you use in SociApp Account."
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="25dp"
+        android:textSize="14sp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/line_to_sperate"/>
+
+    <TextView
+        android:id="@+id/second_number_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2)"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/first_number_point_text"/>
+
+    <TextView
+        android:id="@+id/second_number_point_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please write your message specific about the problem and understandable."
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="25dp"
+        android:textSize="14sp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/first_number_point"/>
+
+    <TextView
+        android:id="@+id/third_number_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3)"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/second_number_point_text"/>
+
+    <TextView
+        android:id="@+id/third_number_point_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please also provide at least one screen shot, that'll make it easy to understande the problem."
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="25dp"
+        android:textSize="14sp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/second_number_point_text"/>
+
+    <TextView
+        android:id="@+id/fourth_number_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4)"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/third_number_point_text"/>
+
+    <TextView
+        android:id="@+id/fourth_number_point_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="And note the below given Email acount and send your report via Email."
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="25dp"
+        android:textSize="14sp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/third_number_point_text"/>
+
+    <TextView
+        android:id="@+id/gmail_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fourth_number_point_text"
+        android:text="kamranullahshangla24@gmail.com"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <ImageView
+        android:id="@+id/line_below_gmail_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@color/chattexthint"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/gmail_account"
+        />
+
+    <TextView
+        android:id="@+id/sorr_messssage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gmail_account"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"
+        android:padding="10dp"
+        android:text="Sorry for the inconvenience, as we are using third party application to gather bugs report but soon we'll provide our own system within this app!"
+/>
+
+    <ImageView
+        android:id="@+id/line_below_long_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@color/chattexthint"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/sorr_messssage"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="SociApp Team"
+        android:layout_below="@+id/line_below_long_text"/>
+
+
+
+</RelativeLayout>

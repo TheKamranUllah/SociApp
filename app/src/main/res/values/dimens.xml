@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text10sp"  space ="3dp">10sp</dimen>
+    <dimen name="text15sp" space ="3dp">15sp</dimen>
+    <dimen name="text20sp" space ="3dp">20sp</dimen>
+    <dimen name="text25sp" space ="3dp">25sp</dimen>
+    <dimen name="text30sp" space ="3dp">30sp</dimen>
+    <dimen name="text35sp" space ="3dp">35sp</dimen>
+    <dimen name="text40sp" space ="3dp">40sp</dimen>
+    <dimen name="text45sp" space ="3dp">45sp</dimen>
+
+    <dimen name="seek_bar_thickness">4dp</dimen>
+    <dimen name="seek_bar_thumb_size">20dp</dimen>
+
+</resources>

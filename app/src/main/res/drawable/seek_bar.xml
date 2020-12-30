@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--Layer list. A LayerDrawable is a drawable object
+    that manages an array of other drawables.
+     Each drawable in the list is drawn in the order
+     of the list—the last drawable in the list is drawn on top.
+      Each drawable is represented by an <item> element inside a
+      single <layer-list> element.-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape
+            android:shape="line">
+            <stroke
+                android:color="@color/seek_bar_background"
+                android:width="@dimen/seek_bar_thickness"/>
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress">
+
+    <!-- Most often used to implement things like progress bars,
+    by increasing the drawable's level with setLevel() .
+     Note: The drawable is clipped completely and not visible when
+     the level is 0 and fully revealed when the level is 10,000.
+      It can be defined in an XML file with the <clip> element-->
+
+        <clip>
+            <shape
+                android:shape="line">
+                <stroke
+                    android:color="@color/white"
+                    android:width="@dimen/seek_bar_thickness"/>
+            </shape>
+        </clip>
+    </item>
+
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape
+                android:shape="line">
+                <stroke
+                    android:color="@color/black"
+                    android:width="@dimen/seek_bar_thickness"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

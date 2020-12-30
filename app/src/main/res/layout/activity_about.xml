@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AboutActivity">
+
+    <include
+        android:id="@+id/about_activity_toolbar"
+        layout="@layout/app_bar_layout"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user1_profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/about_activity_toolbar"
+        android:src="@drawable/user1p"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/about_activity_toolbar"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:text="SociApp Founder"
+        android:layout_marginTop="100sp"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        />
+
+
+
+ <ImageView
+     android:id="@+id/about_message"
+     android:layout_width="wrap_content"
+     android:layout_height="200dp"
+     android:layout_below="@+id/user1_profile_image"
+     android:src="@drawable/mydescription"
+     android:layout_marginTop="150dp"
+     android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@color/colorPrimaryDark"
+        android:layout_below="@+id/about_message"/>
+
+    <ImageView
+        android:id="@+id/copy_right_on_about_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/about_message"
+        android:src="@drawable/copyrightaboutactivity"/>
+
+    <ImageView
+        android:id="@+id/straight_line_below_copy_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@color/colorPrimaryDark"
+        android:layout_below="@+id/copy_right_on_about_activity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/appversionaboutactivity"
+        android:layout_below="@+id/straight_line_below_copy_right"/>
+</RelativeLayout>

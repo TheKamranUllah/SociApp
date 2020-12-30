@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "182836962443",
+    "firebase_url": "https://sociapp-690ce.firebaseio.com",
+    "project_id": "sociapp-690ce",
+    "storage_bucket": "sociapp-690ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182836962443:android:4a64d6535daac57899608e",
+        "android_client_info": {
+          "package_name": "com.example.sociapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182836962443-nea2io9hds59ci8ujpt1visfosbm6m5h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sociapp",
+            "certificate_hash": "e211eb25789fb670fe73c1554bf98c18fbefc104"
+          }
+        },
+        {
+          "client_id": "182836962443-fkjqtaoscr8o2ijim242r3n7fosqhv8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3szRpNuO8A3NuOOaiEGW7MbNtG8VP5OI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182836962443-fkjqtaoscr8o2ijim242r3n7fosqhv8g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

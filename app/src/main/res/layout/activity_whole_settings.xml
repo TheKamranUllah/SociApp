@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WholeSettingsActivity">
+
+    <include
+        android:id="@+id/whole_settings_bar"
+        layout="@layout/app_bar_layout">
+    </include>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="70dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/whol_setting_profile_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/profile"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="4dp"/>
+
+    <LinearLayout
+        android:id="@+id/suser_name_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/whole_setting_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/whole_setting_user_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User account description"
+                android:textColor="@color/chattexthint"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@color/chattexthint"
+        android:layout_marginTop="150dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/whole_setting_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="160dp">
+
+        <LinearLayout
+            android:id="@+id/profile_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/profilesetting"
+               android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profilesetting"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/changepassword"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/changepassword"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/public_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/publiccontrolles"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/publiccontrols"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/report_problem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bugreport"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bugreport"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/about"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/straight_line_below_all_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@color/chattexthint"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/whole_setting_linear_layout"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/straight_line_below_all_settings"
+        android:text="@string/sociappmessage"
+        android:padding="15dp"
+        android:gravity="center"/>
+
+</RelativeLayout>
